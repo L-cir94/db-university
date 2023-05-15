@@ -26,7 +26,7 @@ SHOW tables; DESCRIBE courses; SELECT cfu FROM courses WHERE cfu > 10;
 # Selezionare tutti gli appelli d'esame che avvengono nel pomeriggio (dopo le 14) del 20/06/2020 (21)
 SELECT * FROM exams; SELECT * FROM exams WHERE DATE = "2020-06-20" AND HOUR >= "14:00";
 # Selezionare tutti i corsi di laurea magistrale (38)
-SELECT * from degrees; SELECT * from degrees WHERE LEVEL = "MAGISTRALE";
+SELECT * from degrees; WHERE LEVEL = "MAGISTRALE";
 # Da quanti dipartimenti è composta l'università? (12)
 DESCRIBE departments; SELECT ID FROM departments;
 # Quanti sono gli insegnanti che non hanno un numero di telefono? (50)
