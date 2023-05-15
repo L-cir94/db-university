@@ -16,7 +16,9 @@ clicca su choose filee seleziona il file db_university.sql.gz
 # Selezionare tutti gli studenti nati nel 1990 (160)
 SHOW databases; USE 91_university; SHOW tables; DESCRIBE students; SELECT * FROM students WHERE YEAR(date_of_birth) = 1990;
 # Selezionare tutti gli studenti che hanno più di 30 anni
-
+SELECT * 
+FROM `students`
+WHERE TIMESTAMPDIFF(YEAR, `date_of_birth`, CURDATE()) > 30;
 # Selezionare tutti i corsi del primo semestre del primo anno di un qualsiasi corso di laurea (286)
 SELECT * from courses; SELECT * from courses WHERE PERIOD = 'I semestre' AND YEAR = '1';
 # Corsi che valgono più di 10 crediti (479)
