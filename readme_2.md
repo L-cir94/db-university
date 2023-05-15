@@ -30,3 +30,4 @@ SELECT * from degrees; WHERE LEVEL = "MAGISTRALE";
 # Da quanti dipartimenti è composta l'università? (12)
 DESCRIBE departments; SELECT ID FROM departments;
 # Quanti sono gli insegnanti che non hanno un numero di telefono? (50)
+SHOW databases; USE 91_university; SHOW tables; DESCRIBE students; SELECT COUNT(id) AS 'Teachers without phone numbers' FROM teachers WHERE phone IS NULL;
